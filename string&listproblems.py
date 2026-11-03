@@ -76,6 +76,54 @@ print(f"the concatenation of the two lists is :{lst2+lst3}")
 lst4=lst2.append(lst3)
 print(f"the list after appending is :{lst4}")
 
+lst5=lst2.extend(lst3)
+print(f"the list after extending is :{lst5}")
+
+#insert
+lst2.insert(0,100)
+
+#remove
+lst2.remove(100)
+print(f"the list after removing the element is :{lst2}")
+
+#pop
+lst2.pop(0)
+print(f"the list after popping the element is :{lst2}")
+
+#clear
+lst2.clear()
+print(f"the list after clearing the elements is :{lst2}")
+
+#del
+del lst2[0]
+print(f"the list after deleting the element is :{lst2}")
+
+#sort
+lst1.sort()
+print(f"the list after sorting is :{lst1}")
+
+#sorted
+lst6=sorted(lst3)
+print(f"the list after sorting is :{lst6}")
+
+#challengs 
+
+text="Python Programming"
+text1=text.split()[1]
+print(f"the second word in the string is :{text1}")
+
+text3="codegnan hyderabad"
+text4=text3.split()[1]
+print(text4)
+
+text5="Artificial Intelligence"
+text6=text5.split()[0]
+print(text6)
+
+s="this is python class from morning to evening"
+words=s.split()
+largest_word=max(words,key=len)
+print(f"the largest word in the string is :{largest_word}")
 
 
 

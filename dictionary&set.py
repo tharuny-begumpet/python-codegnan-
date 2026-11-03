@@ -69,7 +69,7 @@ print(d2)
 
 #find the missing numbers
 s1={10,45,62,75,43}
-s2={45,10}
+s2={45,10,1}
 missing_numbers=s1^s2
 print(f"the missing numbers are :{missing_numbers}")
 
@@ -77,3 +77,37 @@ print(f"the missing numbers are :{missing_numbers}")
 word="innovation"
 unique_characters=set(word)
 print(f"the unique characters are :{unique_characters}")
+
+#create a dictionary from two lists 
+std_names=["vishal","siri","swathi"]
+std_marks=[90,80,70]
+student_dict=dict(zip(std_names,std_marks))
+print(f"the student dictionary is :{student_dict}")
+
+#calculate total marks
+marks={"python":85,"aptitude":90,"soft_skills":95}
+total_marks=sum(marks.values())
+print(f"the total marks are :{total_marks}")
+
+
+from collections import Counter
+string3="engineering"
+result=Counter(string3)
+print(f"the character frequencies are :{result}")
+
+print("swapping two numbers using ^ operator")
+a=20
+b=60
+print(f"the values of a and b before swapping are : {a} and {b}")
+a=a^b
+b=a^b
+a=a^b
+print(f"the value of a is :{a}")
+print(f"the value of b is :{b}")
+
+s="this is python class from morning to evening"
+words=s.split()
+largest_word=max(words,key=len)
+print(f"the largest word in the string is :{largest_word}")
+
+print(max(s))
