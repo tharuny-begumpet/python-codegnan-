@@ -72,6 +72,7 @@ while i<=n:
     if i==3:
         break
     print(i,end=" ")
+    i+=1
 else:
     print()
     print("loop executes")

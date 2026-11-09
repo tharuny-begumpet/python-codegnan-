@@ -53,7 +53,8 @@ else:
 #vowel
 alphabets=input("enter any character")
 vowels='a','e','i','o','u'
-if alphabets == vowels :
+if :
     print(vowels)
 else:
     print("nothing") 
+    
