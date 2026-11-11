@@ -82,3 +82,5 @@ for i in list_1:
 print(suml)
 
 
+
+

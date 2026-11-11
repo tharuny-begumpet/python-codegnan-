@@ -52,7 +52,6 @@ l2[3][1]=1000
 print(l2)
 
 #deep copy
-print("deep copy")
 import copy
 l1=[10,20,30,[1,2]]
 l2=copy.deepcopy(l1)

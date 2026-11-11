@@ -89,7 +89,7 @@ marks={"python":85,"aptitude":90,"soft_skills":95}
 total_marks=sum(marks.values())
 print(f"the total marks are :{total_marks}")
 
-
+#counter
 from collections import Counter
 string3="engineering"
 result=Counter(string3)
@@ -105,9 +105,6 @@ a=a^b
 print(f"the value of a is :{a}")
 print(f"the value of b is :{b}")
 
-s="this is python class from morning to evening"
-words=s.split()
-largest_word=max(words,key=len)
-print(f"the largest word in the string is :{largest_word}")
 
-print(max(s))
+
+
