@@ -1,0 +1,97 @@
+n=1
+for r in range(3):
+    for c in range(3):
+        print(n,end=" ")
+        n+=1
+    print()
+
+for r in range(4):
+    for c in range(4):
+        print("*",end=" ")
+    print()
+
+for r in range(5):
+    for c in range(r):
+        print("*",end=" ")
+    print()
+
+# rows=int(input("enter the rows"))
+# columns=int(input("enter the columns"))
+# for r in range(rows):
+#     for c in range(columns):
+#         print("*",end=" ")
+#     print()
+
+for r in range(4):
+    for c in range(4):
+        if r==0 or r==3 or c==0 or c==3:
+            print("*",end=" ")
+        else:
+            print(' ',end=" ")
+    print()
+
+print("daigonal")
+n=5
+for r in range(n):
+    for c in range(n):
+        if (r==c) or (r+c)==(n-1):
+            print("*",end=" ")
+        else:
+            print(' ',end=" ")
+    print()
+
+
+even=2
+odd=3
+for r in range(1,5):
+    for c in range(1,5):
+        if r%2==0:
+            print(odd,end=" ")
+            odd+=2
+        else:
+            print(even,end=" ")
+            even+=2
+    print()
+
+#string reputation
+n=4
+for i in range(n):
+    print("*"*n)
+
+n=5
+for r in range(n):
+    for c in range(n):
+        if r==n//2 or c==n//2:
+            print("*",end=" ")
+        else:
+            print(' ',end=" ")
+    print()
+
+n=5
+for r in range(n):
+    for c in range(n):
+        if r==c or (r+c)==(n-1) or r==n//2:
+            print("*",end=" ")
+        else:
+            print(' ',end=" ")
+    print()        
+
+print("---------------------")
+n=5
+for r in range(n):
+    for c in range(n):
+        if r==c or (r+c)==(n-1) or r==n//2 or c==n//2:
+            print("*",end=" ")
+        else:
+            print(' ',end=" ")
+    print()
+
+print("-----------------")
+n=5
+for r in range(n):
+    for c in range(n):
+        if r==c or (r+c)==(n-1) or c==n//2:
+            print("*",end=" ")
+        else:
+            print(' ',end=" ")
+    print()
