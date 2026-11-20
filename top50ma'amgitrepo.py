@@ -42,6 +42,32 @@ while l < r:
     r -= 1
 print(list2)
 
+#second largest element in the list 
+list1 = [45, 80, 60, 95, 70]
+
+if list1[0] > list1[1]:
+    largest = list1[0]
+    second = list1[1]
+else:
+    largest = list1[1]
+    second = list1[0]
+
+for i in range(2, len(list1)):
+    if list1[i] > largest:
+        second = largest
+        largest = list1[i]
+    elif list1[i] > second:
+        second = list1[i]
+
+print("Largest =", largest)
+print("Second Largest =", second)
+    
+
+
+
+
+
+
 
 
 

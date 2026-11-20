@@ -1,11 +1,11 @@
-# num=int(input("enter the number: "))
-# print(f"The factors of {num} are:")
-# for i in range(1,num+1):
-#     if num%i==0:
-#         print(i,end=' ')
-#         print()
+num=int(input("enter the number: "))
+print(f"The factors of {num} are:")
+for i in range(1,num+1):
+    if num%i==0:
+        print(i,end=' ')
+        print()
 
-# #printing the number of odd numbers in a range 
+#printing the number of odd numbers in a range 
 # odd_number=int(input("enter the number: "))
 # print("the number of odd number are: ")
 # count=0
@@ -14,7 +14,7 @@
 #         count+=1
 # print(count)
 
-#checking if it is a prime number
+# checking if it is a prime number
 # n=int(input("enter the number to be checked"))
 # c=0
 # for i in range(1,n+1):
@@ -25,7 +25,7 @@
 # else:
 #     print("not prime")
 
-#checking if the number is perfect
+# checking if the number is perfect
 # perfect_number=int(input("enter the number: "))
 # list1=[]
 # for i in range(1,perfect_number):
@@ -73,13 +73,13 @@
 # print(sum1)
 # print(length)
 
-#1. Sum of all elements
+# 1. Sum of all elements
 # Find the sum of all elements in a list.
-list_1=list(map(int,input("enter the values of list: ").split(",")))
-suml=0
-for i in list_1:
-    suml+=i
-print(suml)
+# list_1=list(map(int,input("enter the values of list: ").split(",")))
+# suml=0
+# for i in list_1:
+#     suml+=i
+# print(suml)
 
 
 
