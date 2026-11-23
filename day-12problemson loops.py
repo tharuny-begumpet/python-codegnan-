@@ -5,25 +5,25 @@ for i in range(1,num+1):
         print(i,end=' ')
         print()
 
-#printing the number of odd numbers in a range 
-# odd_number=int(input("enter the number: "))
-# print("the number of odd number are: ")
-# count=0
-# for i in range(1,odd_number+1):
-#     if i%2!=0:
-#         count+=1
-# print(count)
+# printing the number of odd numbers in a range 
+odd_number=int(input("enter the number: "))
+print("the number of odd number are: ")
+count=0
+for i in range(1,odd_number+1):
+    if i%2!=0:
+        count+=1
+print(count)
 
 # checking if it is a prime number
-# n=int(input("enter the number to be checked"))
-# c=0
-# for i in range(1,n+1):
-#     if n%i==0:
-#         c+=1
-# if c==2:
-#     print("f the number {n} is prime")
-# else:
-#     print("not prime")
+n=int(input("enter the number to be checked"))
+c=0
+for i in range(1,n+1):
+    if n%i==0:
+        c+=1
+if c==2:
+    print("f the number {n} is prime")
+else:
+    print("not prime")
 
 # checking if the number is perfect
 # perfect_number=int(input("enter the number: "))

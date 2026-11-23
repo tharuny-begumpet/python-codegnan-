@@ -62,17 +62,18 @@ res1=div4()
 def prime(n):
     count = 0
     for i in range(1, n+1):
-        if n % i == 0:   #Checks how many numbers divide n exactly
-            count += 1 # If the remainder is zero, increases the count
-    if count == 2:  # A prime number has exactly two factors 1 and itself
-        return True   # return True means the number is prime, and return False means it is not prime
+        if n % i == 0:   
+            count += 1 
+    if count == 2:  
+        return True   
     else:
         return False
 for i in range(2, 101):
     if prime(i):
         print(i, end=" ")
 
-# patterns
+
+#patterns
 
 # 1. SOLID SQUARE STAR
 
