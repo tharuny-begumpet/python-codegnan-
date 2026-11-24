@@ -68,3 +68,90 @@ while True:
         print(f"you win at {rolls} rolls")
         break
 
+
+import random
+snakes = {
+    27: 5,
+    40: 3,
+    54: 31,
+    66: 45,
+    76: 58,
+    99: 41
+}
+ladders = {
+    4: 25,
+    13: 46,
+    33: 49,
+    42: 63,
+    50: 69,
+    62: 81,
+    74: 92
+}
+player1 = 0
+player2 = 0
+
+rolls1 = 0
+rolls2 = 0
+
+turn = 1
+
+while True:
+
+    if turn == 1:
+        input("\nPlayer 1 - Press Enter to roll the dice...")
+        dice = random.randint(1, 6)
+
+        print(f"Player 1 rolled: {dice}")
+
+        if player1 + dice <= 100:
+            player1 += dice
+
+        if player1 in ladders:
+            print(f" Ladder! {player1} -> {ladders[player1]}")
+            player1 = ladders[player1]
+
+        if player1 in snakes:
+            print(f" Snake! {player1} -> {snakes[player1]}")
+            player1 = snakes[player1]
+
+        print(f"Player 1 Position: {player1}")
+
+        rolls1 += 1
+
+        if player1 == 100:
+            print(f"\n Player 1 Wins in {rolls1} rolls!")
+            break
+
+        turn = 2
+
+    else:
+
+        input("\nPlayer 2 - Press Enter to roll the dice...")
+        dice = random.randint(1, 6)
+
+        print(f"Player 2 rolled: {dice}")
+
+        if player2 + dice <= 100:
+            player2 += dice
+
+        if player2 in ladders:
+            print(f" Ladder! {player2} -> {ladders[player2]}")
+            player2 = ladders[player2]
+
+        if player2 in snakes:
+            print(f" Snake! {player2} -> {snakes[player2]}")
+            player2 = snakes[player2]
+
+        print(f"Player 2 Position: {player2}")
+
+        rolls2 += 1
+
+        if player2 == 100:
+            print(f"\n Player 2 Wins in {rolls2} rolls!")
+            break
+
+        turn = 1
+
+#py audio
+#py text
+#py speech recognition
