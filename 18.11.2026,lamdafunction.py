@@ -25,6 +25,9 @@ nums1=[1,2,3,4,5]
 even_odd=map(lambda x:'even' if x%2==0 else 'odd' ,nums1)
 print(list(even_odd))
 
+numbers=[1,2,3,4,5]
+sum_of_squares=sum(map(lambda x:x*x,numbers))
+print(sum_of_squares)
 
 
 
